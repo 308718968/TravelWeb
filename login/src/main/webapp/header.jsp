@@ -22,7 +22,7 @@
 
             <span>欢迎回来，admin</span>
             <a href="myfavorite.jsp" class="collection">我的收藏</a>
-            <a href="javascript:;">退出</a>
+            <a href="${pageContext.request.contextPath}/CancelAutoLoginServlet">退出</a>
         </div>
     </div>
     <div class="header_wrap">

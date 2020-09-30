@@ -32,7 +32,7 @@
             var password = $("#password").val();
             $.ajax({
                 url:"LoginServlet",//url
-                async:true,//true 同步请求
+                async:false,//true 同步请求
                 data:$("#loginForm").serialize(),
                 type:"post",//指定请求方式
                 dataType:"json",//预期返回的数据类型
@@ -59,18 +59,18 @@
                 type:"post",//指定请求方式
                 dataType:"json",//预期返回的数据类型
                 success:function (data) {//请求成功后的回调函数。
-                         window.location = "route_detail.jsp"
-
+                         window.location = "index.jsp"
                 },
                 error:function () {//请求失败时调用此函数。
-
                 }
             });
         }
         $(function () {
             Autologin()
             $("#btn").click(loginorcheck)
+            $("#errorMsg").text(${loginmsg})
         })
+
 
     </script>
 </head>
@@ -100,11 +100,11 @@
                 <input id= "password" name="password" type="text" placeholder="请输入密码" autocomplete="off">
                 <div class="verify">
                     <input name="check" type="text" placeholder="请输入验证码" autocomplete="off">
-                    <span><img src="checkCode" alt="" onclick="changeCheckCode(this)"></span>
+                   <span> <img src="${pageContext.request.contextPath}/CheckCodeServlet" alt="" onclick="changeCheckCode(this)"></span>
                     <script type="text/javascript">
                         //图片点击事件
                         function changeCheckCode(img) {
-                            img.src="checkCode?"+new Date().getTime();
+                            img.src="${pageContext.request.contextPath}/CheckCodeServlet?"+new Date().getTime();
                         }
                     </script>
                 </div>

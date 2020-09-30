@@ -44,6 +44,10 @@ public class ResultInfo implements Serializable {
     public void setFlag(boolean flag) {
         this.flag = flag;
     }
+    public boolean getFlag() {
+        return flag;
+    }
+
 
     public Object getData() {
         return data;

@@ -17,27 +17,37 @@ import java.util.Map;
 public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
+        ResultInfo resultInfo;
         String rememberme = request.getParameter("rememberme");
-        System.out.println(session.getId());
-        Map<String, String[]> map = request.getParameterMap();
-        User user = new User();
-        try {
-            BeanUtils.populate(user,map);
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
-            e.printStackTrace();
+        String check = request.getParameter("check");
+        String code = (String) request.getSession().getAttribute("code");
+        if(code.equalsIgnoreCase(check)){
+            System.out.println(session.getId());
+            Map<String, String[]> map = request.getParameterMap();
+            User user = new User();
+            try {
+                BeanUtils.populate(user,map);
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (InvocationTargetException e) {
+                e.printStackTrace();
+            }
+            System.out.println(user);
+            LoginService loginService = new LoginService();
+            resultInfo = loginService.findUserByName(user);
+            if(rememberme!=null&&resultInfo.getFlag()==true){
+                session.setAttribute("user",user);
+                session.setMaxInactiveInterval(3600*24*7);
+                Cookie cookie = new Cookie("JSESSIONID",session.getId());
+                cookie.setMaxAge(60*60*24*7);
+                cookie.setPath("/");
+                response.addCookie(cookie);
+            }
+        }else{
+            resultInfo = new ResultInfo();
+            resultInfo.setFlag(false);
+            resultInfo.setErrorMsg("验证码错误");
         }
-        if(rememberme!=null){
-            session.setAttribute("user",user);
-            session.setMaxInactiveInterval(3600*24*7);
-            Cookie cookie = new Cookie("JSESSIONID",session.getId());
-            cookie.setMaxAge(60*60*24*7);
-            cookie.setPath("/");
-            response.addCookie(cookie);
-        }
-        LoginService loginService = new LoginService();
-        ResultInfo resultInfo = loginService.findUserByName(user);
         response.getWriter().print(new ObjectMapper().writeValueAsString(resultInfo));
     }
 
