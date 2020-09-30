@@ -11,146 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d1ccf6e-b503-4886-9c8b-b6913aabfbbe" name="Default Changelist" comment="引入资源文件">
-      <change afterPath="$PROJECT_DIR$/login/src/main/java/com/glc/bean/ResultInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/java/com/glc/bean/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/java/com/glc/util/MySessionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/css/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/css/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/css/ranking-list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/css/register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/css/route-detail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/css/search.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/favoriterank.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3a91779e64adcd291562b59dd225639b7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3a92bdb8a11c5f83bdeddb8ee3abbd3fc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3a93c305bc6c9c74acee9e566ec40c765.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3a97735f3c1f4d895c2950abbf7e758fd.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3aaaaa5b07f6835ebb28ac4821052f94b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3ab024d539778cfee109fddf4e08a31fd.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3ac1aa10b493b4b22221e19ba39f7e6a1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3ad15a67a7da74d3690cd1bcc6582d529.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3ae1f3a49daf6ff79871f6211d49e9c26.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3af7062cd24cb520c8eae99265a9dee5e.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3af93767375fa2a989f1c82b3df3da7c7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3afc3e64f7ad9d519511704c449558522.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3b08e4d7f21ac03d7c759446017cc33c4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3b0ce750a53fc3ea9a5c65fbe63f13c5f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3b0cfc51a46104ff8fafcf6692eb4ad64.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3b17a076ba82f824ceeaebb2cdc0cf9d6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3b27aaee35823a32b5a95da019df3620f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3b2c6e8fa0e92882b9362c68dfa504324.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3b350a4abe82f0a7d0fd2897ce7d59ae5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3b3bbdd11f3ea6f1a849b7f744f432e7f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3b3f923ddb50bb855305a5c60e264185a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3b4d19539864a93b01c7803edb6b916a0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3b5dbd9d954571142d7dd25cccb22b86f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3b73ad0712746ef03019e34fb9757401d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3b867dc2e6b28708eeb0961a4cd9aa3c8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3b989a3f3653eaab8d291362474e7d2b0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3bc92ed09dc80f91641ea195983bf1284.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3bdddf4e87f0c6726bae49a9c71311d50.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3bdf71ba19f26095333c7026708f80276.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3bf14f8464a1b270d90fbf7a3a923fe8f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3bfe3cfbbcb0fc5ce2b79cb022c07f2d6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3c0b7f553102b0dd7c23bad24045381ec.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3c1ba05da8b7267e4c0bb1bcfee0f2f0b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3c359cf10f1cf1f24c4444b7b311d921f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3c4068c49014303df7086f8f2df14ca47.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3c448e5f5c39ecb30d560b6c2f75aa6a9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3c59f2779e7e8389160c59974f514e257.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3c8e0b59aa2be71e6057decbae24cb1ce.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3c93f7358519269872e3c3ba141ff7d8b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3c9823bc50368af0fe83eff14a5587c0a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3c9c87a1175252d187eb8c4bc228c317d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3ca551a5fd855bb72d76b7ff5ae23bf19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3ca7779ce012cb9f8a1e2993437228a1b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3ca81e31ce4a93bb9350d968b55a9129e.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3caa309cf45feb26ae050469ddaca1bac.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3cb94ab4f0dda8cd5ce1769e138a07971.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3cba55e9edc086502e0bc95c8db2ca498.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3cbf47c96c3a70765eb9c90efb345f0d3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3cc0ae9ebf1a693d03ec69d94a5b79a75.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3cc3bbbb47e4899597a160233b4ac5080.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3cc6cf2d161de7dbf8a963b0451ea7cfe.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3cda62bd923c9daeb8e34fb1e6b9f1a82.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3ce75dde0868132a5b0e2b303b9e5dd0c.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3cfa8355222bddde5a05ce589a602079f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3cfada653cee3cfa258970e836465f6ae.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3d07a3e37145d623e59f4e4e33544ce2f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3d277c4162a89fec039c3b96e083ac4eb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3d283063b783a4c89670c3f6f68877e8f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3d3b7e41457ca4476f1eb0fe76e6dcac9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3d3fabe71ace1184426ac6df14bfb6cd6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3d4e24bd288c8b9ecbd81d20dbf9fe5bc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3d5684b0a84605a17b418d547ccb30431.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3d5d79457cd1f3c2b54a10994d7d9dc08.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3d62aa9f19c84f99a8b700f12824b195b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3d69b0ea3165d04302cc068ac14192bd1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3d79fd84589ebf3b83293ee1b3c2520f6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3d91ef60e0c7fdeee97a4e2d3e5a42e84.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3d97f3c41f82329b7a45e67e9de2c96ca.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3da261c8b05a2b8f6d7c4026fbd8fadfa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3db4d2277b5df3d98597f79082ef92d6d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3dc9f22d10070d66a939555d3e63aaef2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3de51fe9d86478b06e9d7a0ea07268b2b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3de663b67f7fa51bc482d40c87aea6da9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3e31ced52280430a63722deaec010dda9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3e3bd7b061c32a7ea6a21d93641c806cb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3e4645981ee23d9b89ba41ad7363ae3fa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3e55b5c21f86efb34f3dcc3fa6a5cd2cb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3e58cd1b85e778b6f57a3745037704b35.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3e5a38453ae434a21243962988d559a78.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3e5d098135b9249aab3ba5c2b71759773.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3e820d274755c674e67d0e0da5bdbf8a9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3e92a5813376e788457b488dc1c686499.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3e99b3ae168835b4811d450045d544c9c.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3ea170da1eace118d3c266f55b67d530b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3ea92816a6378ea6d6ba4c49e6fc6fbc3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3ebcff17fe65524c427d98e811fc476a7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3ec4a602492df72816ec03871f2bb59df.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3ed6000c0edb3ab4737004f6852e5c02f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3ee132c9d26413f60239bf1a307805004.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3eedfb8ee93dfc041aa9dea6f2751a0d8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3ef702190f1c51354db5b9e754573428b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3f048ef0b9076f47c670c63018d70e6bf.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3f15936372dc3462d335b0e4ae95ef10b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3f25da4da92afb6220a8ca5dd79ba7103.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3f3be8f913e34b9f9345bf9990f005a2d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3f42939e7991367d0120c7e49fdefeaa9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3f44a47d91cb6cb8c74b4f7cd5d430152.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3f535b6065c0085e6e69d1df7337bc60c.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3f5bee4251593b892bb3275e6957e5c07.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3f8fceb05373509d23444720352c903e8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3f9cb1c7e3488f60e3b3da09b8700df5d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3f9f8d93ca103baee7ca3186c27f97717.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3fa508d84cd1f43ec2a91eed76e084297.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3fa7b43b0cc93b78676a5cd9e5a32c309.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3fb75c5e8b6c0ca4b851c98a6c709b7fb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3fbf284c91f951d6a5a071a3f02010669.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3fc57a9c3b08b5bb6146117d5b16c0cb0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3fd7637f5a1a26457acf474e1b6e19504.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3fd95ae517091220d8430dbb36418ad4c.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3fde4e5c0a5ee7362fcb2d9767a607340.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/img/product/small/m3fe89654cb1d095d30a90eca1dbfd77c5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/js/getParameter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/js/jquery-1.11.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/js/jquery-3.3.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/myfavoriter.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/register_ok.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/route_detail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/main/webapp/route_list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/webapp/favoriterank.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/webapp/favoriterank.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/webapp/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/webapp/myfavoriter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/webapp/myfavoriter.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/webapp/route_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/webapp/route_list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +39,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -187,6 +63,7 @@
   <component name="MavenRunner">
     <option name="delegateBuildToMaven" value="true" />
     <option name="jreName" value="1.8" />
+    <option name="skipTests" value="true" />
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectId" id="1iDFSv7DYPDgQ18Yea4bKzBuUeZ" />
@@ -199,17 +76,97 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/login/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/login/src/main/resources/com/glc/dao" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.glc.dao" />
+      <recent name="com.glc.service" />
+      <recent name="" />
       <recent name="com.glc.util" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\TravelWeb\login\src\main\resources\com\glc\dao" />
+      <recent name="F:\TravelWeb\login\src\main\java\com\glc\web" />
       <recent name="F:\TravelWeb\login\src\main\webapp" />
       <recent name="F:\TravelWeb\login\src\main\java\com\glc\bean" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.56" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login_war_exploded/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="login:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/login_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_TravelWeb_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="23189" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="login:war exploded" />
+        </option>
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -221,7 +178,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601434258415</updated>
-      <workItem from="1601434260661" duration="984000" />
+      <workItem from="1601434260661" duration="2136000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1601434813160</created>
@@ -230,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601434813160</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="引入资源文件">
+      <created>1601435313941</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601435313942</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,22 +217,38 @@
     <option name="LAST_COMMIT_MESSAGE" value="引入资源文件" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1860" height="279" key="GridCell.Tab.0.bottom" timestamp="1601434696532">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601435586860">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601434696532" />
-    <state width="1860" height="279" key="GridCell.Tab.0.center" timestamp="1601434696532">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601435586860" />
+    <state x="100" y="100" width="1720" height="840" key="DiffContextDialog" timestamp="1601435587268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601434696532" />
-    <state width="1860" height="279" key="GridCell.Tab.0.left" timestamp="1601434696532">
+    <state x="100" y="100" width="1720" height="840" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601435587268" />
+    <state width="1281" height="279" key="GridCell.Tab.0.bottom" timestamp="1601435647810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601434696532" />
-    <state width="1860" height="279" key="GridCell.Tab.0.right" timestamp="1601434696532">
+    <state width="1281" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601435647810" />
+    <state width="1281" height="279" key="GridCell.Tab.0.center" timestamp="1601435647810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601434696532" />
+    <state width="1281" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601435647810" />
+    <state width="1281" height="279" key="GridCell.Tab.0.left" timestamp="1601435647810">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1281" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601435647810" />
+    <state width="1281" height="279" key="GridCell.Tab.0.right" timestamp="1601435647810">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1281" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601435647810" />
+    <state x="813" y="253" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1601435321356">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="813" y="253" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601435321356" />
+    <state x="662" y="224" width="596" height="594" key="find.popup" timestamp="1601436404493">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="662" y="224" width="596" height="594" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601436404493" />
     <state x="334" y="180" key="new project wizard" timestamp="1601434349360">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

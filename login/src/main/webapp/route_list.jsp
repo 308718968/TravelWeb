@@ -47,7 +47,7 @@
                                 <span>299</span>
                                 <span>起</span>
                             </p>
-                            <p><a href="route_detail.html">查看详情</a></p>
+                            <p><a href="route_detail.jsp">查看详情</a></p>
                         </div>
                     </li>
                     <li>
@@ -63,7 +63,7 @@
                                 <span>899</span>
                                 <span>起</span>
                             </p>
-                            <p><a href="route_detail.html">查看详情</a></p>
+                            <p><a href="route_detail.jsp">查看详情</a></p>
                         </div>
                     </li>
                     <li>
@@ -79,7 +79,7 @@
                                 <span>999</span>
                                 <span>起</span>
                             </p>
-                            <p><a href="route_detail.html">查看详情</a></p>
+                            <p><a href="route_detail.jsp">查看详情</a></p>
                         </div>
                     </li>
                     <li>
@@ -95,7 +95,7 @@
                                 <span>99</span>
                                 <span>起</span>
                             </p>
-                            <p><a href="route_detail.html">查看详情</a></p>
+                            <p><a href="route_detail.jsp">查看详情</a></p>
                         </div>
                     </li>
                     <li>
@@ -111,7 +111,7 @@
                                 <span>199</span>
                                 <span>起</span>
                             </p>
-                            <p><a href="route_detail.html">查看详情</a></p>
+                            <p><a href="route_detail.jsp">查看详情</a></p>
                         </div>
                     </li>
                     <li>
@@ -127,7 +127,7 @@
                                 <span>899</span>
                                 <span>起</span>
                             </p>
-                            <p><a href="route_detail.html">查看详情</a></p>
+                            <p><a href="route_detail.jsp">查看详情</a></p>
                         </div>
                     </li>
                     <li>
@@ -143,7 +143,7 @@
                                 <span>1199</span>
                                 <span>起</span>
                             </p>
-                            <p><a href="route_detail.html">查看详情</a></p>
+                            <p><a href="route_detail.jsp">查看详情</a></p>
                         </div>
                     </li>
                     <li>
@@ -159,7 +159,7 @@
                                 <span>1589</span>
                                 <span>起</span>
                             </p>
-                            <p><a href="route_detail.html">查看详情</a></p>
+                            <p><a href="route_detail.jsp">查看详情</a></p>
                         </div>
                     </li>
                 </ul>

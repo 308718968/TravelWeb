@@ -44,7 +44,7 @@
                     }
                     else{
                         $("#errorMsg").text("");
-                         window.location = "route_detail.html"
+                         window.location = "index.jsp"
                     }
                 },
                 error:function () {//请求失败时调用此函数。
@@ -59,7 +59,7 @@
                 type:"post",//指定请求方式
                 dataType:"json",//预期返回的数据类型
                 success:function (data) {//请求成功后的回调函数。
-                         window.location = "route_detail.html"
+                         window.location = "route_detail.jsp"
 
                 },
                 error:function () {//请求失败时调用此函数。

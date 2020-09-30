@@ -15,13 +15,13 @@
         <!-- 未登录状态  -->
         <div class="login_out">
             <a href="login.jsp">登录</a>
-            <a href="register.html">注册</a>
+            <a href="register.jsp">注册</a>
         </div>
         <!-- 登录状态  -->
         <div class="login">
 
             <span>欢迎回来，admin</span>
-            <a href="myfavorite.html" class="collection">我的收藏</a>
+            <a href="myfavorite.jsp" class="collection">我的收藏</a>
             <a href="javascript:;">退出</a>
         </div>
     </div>
@@ -50,15 +50,15 @@
 <!-- 首页导航 -->
 <div class="navitem">
     <ul class="nav">
-        <li class="nav-active"><a href="index.html">首页</a></li>
-        <li><a href="route_list.html">门票</a></li>
-        <li><a href="route_list.html">酒店</a></li>
-        <li><a href="route_list.html">香港车票</a></li>
-        <li><a href="route_list.html">出境游</a></li>
-        <li><a href="route_list.html">国内游</a></li>
-        <li><a href="route_list.html">港澳游</a></li>
-        <li><a href="route_list.html">抱团定制</a></li>
-        <li><a href="route_list.html">全球自由行</a></li>
-        <li><a href="favoriterank.html">收藏排行榜</a></li>
+        <li class="nav-active"><a href="index.jsp">首页</a></li>
+        <li><a href="route_list.jsp">门票</a></li>
+        <li><a href="route_list.jsp">酒店</a></li>
+        <li><a href="route_list.jsp">香港车票</a></li>
+        <li><a href="route_list.jsp">出境游</a></li>
+        <li><a href="route_list.jsp">国内游</a></li>
+        <li><a href="route_list.jsp">港澳游</a></li>
+        <li><a href="route_list.jsp">抱团定制</a></li>
+        <li><a href="route_list.jsp">全球自由行</a></li>
+        <li><a href="favoriterank.jsp">收藏排行榜</a></li>
     </ul>
 </div>
