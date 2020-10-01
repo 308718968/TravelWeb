@@ -13,15 +13,21 @@ import java.io.IOException;
 @WebServlet("/AutoLoginServlet")
 public class AutoLoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //获取session对象，如果cookie中存放着jsessionid，就代表着登入过且记住密码，没有的话会形成新的jsessionid
         HttpSession session = request.getSession();
         System.out.println(session.getId());
+        //获取浏览器携带的jsessionid
         Cookie[] cookies = request.getCookies();
         for(Cookie cookie:cookies){
             if("JSESSIONID".equals(cookie.getName())){
+                //如果该sessionid下的域中存放着user对象就进行登录操作
                 User user = (User) session.getAttribute("user");
                 LoginService loginService = new LoginService();
-                ResultInfo resultInfo = loginService.findUserByName(user);
-                response.getWriter().print(new ObjectMapper().writeValueAsString(resultInfo));
+                ResultInfo resultInfo = loginService.login(user);
+                if(resultInfo.getFlag()==true){
+                    response.getWriter().print(new ObjectMapper().writeValueAsString(resultInfo));
+                }
+
             }
         }
     }

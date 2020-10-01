@@ -15,6 +15,72 @@
     <!--导入jquery-->
     <script src="js/jquery-3.3.1.js"></script>
 </head>
+<script type="text/javascript">
+    //检验密码
+    function checkPassword() {
+        var password = $("#password").val();
+        //定义正则
+        var reg = /^\w{6,20}$/;
+        //校验
+        var flag = reg.test(password);
+        if (flag){
+            //验证成功
+            $("#password").css("border","");
+            $("#passwordmsg").text("")
+
+        }else {
+            //验证失败
+            $("#password").css("border","1px solid red");
+            $("#passwordmsg").text("密码长度不能小于6").css("color","red");
+        }
+        return flag;
+    }
+    //检验邮箱
+    function checkEmail(){
+        var email = $("#email").val();
+
+        //定义正则校验邮箱
+        var reg = /^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$/;
+        var flag = reg.test(email);
+        if (flag){
+            //验证成功
+            $("#email").css("border","");
+            $("#emailmsg").text("");
+
+        }else {
+            //验证失败
+            $("#email").css("border","1px solid red");
+            $("#emailmsg").text("邮箱格式不正确").css("color","red")
+        }
+        return flag;
+    }
+    function checkcode() {
+        var flag;
+        var codestring = $("#checkcode").val()
+        $.ajax({
+            url:"${pageContext.request.contextPath}/TestCodeServlet",
+            async:false,
+            data:"code="+codestring,
+            type:"post",
+            dataType:"json",
+            success:function (data) {
+                if(data.code==0){//验证码正确
+                    newcheckcode();
+                    flag=true
+                }
+                else {
+                    $("#codemsg").text(data.msg).css("color","red")
+                    newcheckcode();
+                    $("#checkcode").text("")
+                    flag=false;
+                }
+            },
+            error:function () {
+            }
+        });
+        return flag;
+    }
+</script>
 <body>
 <!--引入头部-->
 <div id="header">
@@ -30,7 +96,7 @@
         <div class="rg_form_center">
 
             <!--注册表单-->
-            <form id="registerForm">
+            <form id="registerForm" method="post" action="/RegisterServlet" onsubmit="return false" >
                 <!--提交处理请求的标识符-->
                 <input type="hidden" name="action" value="register">
                 <table style="margin-top: 25px;">
@@ -73,6 +139,7 @@
                         <td class="td_right">
                             <input type="text" id="telephone" name="telephone" placeholder="请输入您的手机号">
                         </td>
+                        <td class=""></td>
                     </tr>
                     <tr>
                         <td class="td_left">
@@ -97,7 +164,9 @@
                         </td>
                         <td class="td_right check">
                             <input type="text" id="check" name="check" class="check">
-                            <img src="checkCode" height="32px" alt="" onclick="changeCheckCode(this)">
+
+                            <img src="${pageContext.request.contextPath}/CheckCodeServlet" height="32px" alt="" onclick="changeCheckCode(this)">
+
                             <script type="text/javascript">
                                 //图片点击事件
                                 function changeCheckCode(img) {
@@ -105,14 +174,36 @@
                                 }
                             </script>
                         </td>
+                        <td>
+                        </td>
                     </tr>
                     <tr>
                         <td class="td_left">
                         </td>
                         <td class="td_right check">
-                            <input type="submit" class="submit" value="注册">
-                            <span id="msg" style="color: red;"></span>
+                            <input type="submit" class="submit" value="注册" >
+                            <span id="msg" style="color: #ff0000;"></span>
                         </td>
+                        <script type="text/javascript">
+                            $("#registerForm").submit(function () {
+                                $.ajax({
+                                    url:"${pageContext.request.contextPath}/RegisterServlet",
+                                    async:true,
+                                    data:$("#registerForm").serialize(),
+                                    type:"post",
+                                    dataType:"json",
+                                    success:function (data) {
+                                        if(data.flag==false){//账号密码不正确，页面局部显示错误信息
+                                            $("#msg").text(data.ErrorMsg).css("color","red")
+                                        }else {//成功跳转
+                                            $(location).attr('href', "${pageContext.request.contextPath}/register_ok.jsp")
+                                        }
+                                    },
+                                    error:function () {
+                                    }
+                                });
+                            })
+                        </script>
                     </tr>
                 </table>
             </form>
@@ -120,7 +211,7 @@
         <div class="rg_form_right">
             <p>
                 已有账号？
-                <a href="#">立即登录</a>
+                <a href="${pageContext.request.contextPath}/login.jsp">立即登录</a>
             </p>
         </div>
     </div>

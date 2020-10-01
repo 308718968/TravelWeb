@@ -5,7 +5,7 @@
   Time: 19:10
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 
 <html>
 
@@ -51,7 +51,9 @@
                     alert("服务器发生了错误")
                 }
             });
+            changeCheckCode();
         }
+        //自动登录，ajax发异步请求，如果浏览器携带着jsessionid，且域中有用户账户密码，就进行自动登录
         function Autologin() {
             $.ajax({
                 url:"AutoLoginServlet",//url
@@ -65,13 +67,17 @@
                 }
             });
         }
+        //页面加载完成后，首先先发异步请求看是否可以自动登陆
         $(function () {
-            Autologin()
-            $("#btn").click(loginorcheck)
-            $("#errorMsg").text(${loginmsg})
+            Autologin();
+            $("#btn").click(loginorcheck);
+            $("#errorMsg").text("${requestScope.loginmsg}")
         })
 
-
+        //图片点击事件
+        function changeCheckCode() {
+            $("#checkcodeimg").attr("src","${pageContext.request.contextPath}/CheckCodeServlet?"+new Date().getTime());
+        }
     </script>
 </head>
 
@@ -100,13 +106,8 @@
                 <input id= "password" name="password" type="text" placeholder="请输入密码" autocomplete="off">
                 <div class="verify">
                     <input name="check" type="text" placeholder="请输入验证码" autocomplete="off">
-                   <span> <img src="${pageContext.request.contextPath}/CheckCodeServlet" alt="" onclick="changeCheckCode(this)"></span>
-                    <script type="text/javascript">
-                        //图片点击事件
-                        function changeCheckCode(img) {
-                            img.src="${pageContext.request.contextPath}/CheckCodeServlet?"+new Date().getTime();
-                        }
-                    </script>
+                   <span> <img id="checkcodeimg" src="${pageContext.request.contextPath}/CheckCodeServlet" alt="" onclick="changeCheckCode()"></span>
+
                 </div>
                 <div class="submit_btn">
                     <button id="btn" type="button">登录</button>
@@ -116,7 +117,7 @@
                     </div>
                 </div>
             </form>
-            <div class="reg">没有账户？<a href="javascript:;">立即注册</a></div>
+            <div class="reg">没有账户？<a href="${pageContext.request.contextPath}/register.jsp">立即注册</a></div>
         </div>
     </div>
 </section>

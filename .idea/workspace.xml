@@ -13,10 +13,17 @@
     <list default="true" id="6d1ccf6e-b503-4886-9c8b-b6913aabfbbe" name="Default Changelist" comment="引入资源文件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login/src/main/java/com/glc/bean/ResultInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/java/com/glc/bean/ResultInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/java/com/glc/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/java/com/glc/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/java/com/glc/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/java/com/glc/service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/java/com/glc/web/filter/IsLoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/java/com/glc/web/filter/IsLoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/java/com/glc/web/servlet/AutoLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/java/com/glc/web/servlet/AutoLoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/java/com/glc/web/servlet/CancelAutoLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/java/com/glc/web/servlet/CancelAutoLoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/java/com/glc/web/servlet/CheckCodeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/java/com/glc/web/servlet/CheckCodeServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login/src/main/java/com/glc/web/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/java/com/glc/web/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/webapp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/resources/com/glc/dao/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/resources/com/glc/dao/UserDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/webapp/myfavoriter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/webapp/myfavorite.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/webapp/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/test/java/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,15 +82,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/login/src/main/resources/com/glc/dao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/login/src/main/java/com/glc/util" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2028436" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.glc.service" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\TravelWeb\login\src\main\java\com\glc\util" />
+      <recent name="F:\TravelWeb\login\src\main\resources\com\glc\dao" />
+      <recent name="F:\TravelWeb\login\src\main\java\com\glc\web" />
+      <recent name="F:\TravelWeb\login\src\main\webapp" />
+      <recent name="F:\TravelWeb\login\src\main\java\com\glc\bean" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.glc.dao" />
@@ -91,11 +102,8 @@
       <recent name="" />
       <recent name="com.glc.util" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\TravelWeb\login\src\main\resources\com\glc\dao" />
-      <recent name="F:\TravelWeb\login\src\main\java\com\glc\web" />
-      <recent name="F:\TravelWeb\login\src\main\webapp" />
-      <recent name="F:\TravelWeb\login\src\main\java\com\glc\bean" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.glc.service" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat">
@@ -104,6 +112,26 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Test" />
       <option name="METHOD_NAME" value="TestCheckCode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.TestRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="login" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <option name="METHOD_NAME" value="TestRegister" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="login" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -184,9 +212,13 @@
     <list>
       <item itemvalue="JUnit.Test.TestCheckCode" />
       <item itemvalue="Tomcat Server.Tomcat" />
+      <item itemvalue="JUnit.Test.TestRegister" />
+      <item itemvalue="JUnit.Test.test2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Test.TestRegister" />
+        <item itemvalue="JUnit.Test.test2" />
         <item itemvalue="JUnit.Test.TestCheckCode" />
       </list>
     </recent_temporary>
@@ -201,7 +233,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601434258415</updated>
-      <workItem from="1601434260661" duration="19040000" />
+      <workItem from="1601434260661" duration="29073000" />
+      <workItem from="1601516582277" duration="7470000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1601434813160</created>
@@ -233,6 +266,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化" />
@@ -252,66 +286,86 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="100" y="100" width="1720" height="840" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601445392807" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1601450243924">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1601466120864">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1601450243924" />
-    <state width="1281" height="247" key="GridCell.Tab.0.bottom" timestamp="1601459166720">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1601466120864" />
+    <state width="1281" height="378" key="GridCell.Tab.0.bottom" timestamp="1601532785758">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1281" height="247" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601459166720" />
-    <state width="1281" height="247" key="GridCell.Tab.0.center" timestamp="1601459166720">
+    <state width="1281" height="378" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601532785758" />
+    <state width="1281" height="378" key="GridCell.Tab.0.center" timestamp="1601532785757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1281" height="247" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601459166720" />
-    <state width="1281" height="247" key="GridCell.Tab.0.left" timestamp="1601459166720">
+    <state width="1281" height="378" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601532785757" />
+    <state width="1281" height="378" key="GridCell.Tab.0.left" timestamp="1601532785757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1281" height="247" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601459166720" />
-    <state width="1281" height="247" key="GridCell.Tab.0.right" timestamp="1601459166720">
+    <state width="1281" height="378" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601532785757" />
+    <state width="1281" height="378" key="GridCell.Tab.0.right" timestamp="1601532785757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1281" height="247" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601459166720" />
-    <state width="1281" height="247" key="GridCell.Tab.1.bottom" timestamp="1601459166666">
+    <state width="1281" height="378" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601532785757" />
+    <state width="1281" height="378" key="GridCell.Tab.1.bottom" timestamp="1601532785642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1281" height="247" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601459166666" />
-    <state width="1281" height="247" key="GridCell.Tab.1.center" timestamp="1601459166666">
+    <state width="1281" height="378" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601532785642" />
+    <state width="1281" height="378" key="GridCell.Tab.1.center" timestamp="1601532785642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1281" height="247" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601459166666" />
-    <state width="1281" height="247" key="GridCell.Tab.1.left" timestamp="1601459166666">
+    <state width="1281" height="378" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601532785642" />
+    <state width="1281" height="378" key="GridCell.Tab.1.left" timestamp="1601532785642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1281" height="247" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601459166666" />
-    <state width="1281" height="247" key="GridCell.Tab.1.right" timestamp="1601459166666">
+    <state width="1281" height="378" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601532785642" />
+    <state width="1281" height="378" key="GridCell.Tab.1.right" timestamp="1601532785642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1281" height="247" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601459166666" />
-    <state width="1281" height="247" key="GridCell.Tab.2.bottom" timestamp="1601459166666">
+    <state width="1281" height="378" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601532785642" />
+    <state width="1281" height="378" key="GridCell.Tab.2.bottom" timestamp="1601532785642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1281" height="247" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601459166666" />
-    <state width="1281" height="247" key="GridCell.Tab.2.center" timestamp="1601459166666">
+    <state width="1281" height="378" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601532785642" />
+    <state width="1281" height="378" key="GridCell.Tab.2.center" timestamp="1601532785642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1281" height="247" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601459166666" />
-    <state width="1281" height="247" key="GridCell.Tab.2.left" timestamp="1601459166666">
+    <state width="1281" height="378" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601532785642" />
+    <state width="1281" height="378" key="GridCell.Tab.2.left" timestamp="1601532785642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1281" height="247" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601459166666" />
-    <state width="1281" height="247" key="GridCell.Tab.2.right" timestamp="1601459166666">
+    <state width="1281" height="378" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601532785642" />
+    <state width="1281" height="378" key="GridCell.Tab.2.right" timestamp="1601532785642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1281" height="247" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601459166666" />
+    <state width="1281" height="378" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601532785642" />
+    <state width="1281" height="512" key="GridCell.Tab.3.bottom" timestamp="1601473730976">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1281" height="512" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601473730976" />
+    <state width="1281" height="512" key="GridCell.Tab.3.center" timestamp="1601473730976">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1281" height="512" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601473730976" />
+    <state width="1281" height="512" key="GridCell.Tab.3.left" timestamp="1601473730976">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1281" height="512" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601473730976" />
+    <state width="1281" height="512" key="GridCell.Tab.3.right" timestamp="1601473730976">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1281" height="512" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601473730976" />
+    <state x="730" y="221" key="RollbackChangesDialog" timestamp="1601468527812">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="730" y="221" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601468527812" />
     <state x="440" y="94" width="1258" height="852" key="SettingsEditor" timestamp="1601451154839">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" width="1258" height="852" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601451154839" />
-    <state x="530" y="165" key="com.intellij.javaee.view.ServerArtifactsDialog" timestamp="1601455976874">
+    <state x="530" y="165" key="com.intellij.javaee.view.ServerArtifactsDialog" timestamp="1601532184124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="530" y="165" key="com.intellij.javaee.view.ServerArtifactsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601455976874" />
+    <state x="530" y="165" key="com.intellij.javaee.view.ServerArtifactsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601532184124" />
     <state x="813" y="253" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1601436526268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -328,5 +382,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="242" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601434605756" />
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1601464418776">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601464418776" />
   </component>
 </project>
