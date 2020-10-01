@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!-- 头部 start -->
 <header id="header">
     <div class="top_banner">
@@ -14,15 +15,21 @@
     <div class="shortcut">
         <!-- 未登录状态  -->
         <div class="login_out">
-            <a href="login.jsp">登录</a>
-            <a href="register.jsp">注册</a>
+            <c:if test="${user==null}">
+                <a href="login.jsp" >未登录,请登录 </a>
+                <a href="register.jsp" style="color:#ff4444">免费注册</a>
+            </c:if>
+
         </div>
         <!-- 登录状态  -->
         <div class="login">
+            <c:if test="${user!=null}">
+                <span>欢迎回来,${user.name}</span>
+                <a href="myfavorite.jsp" class="collection">我的收藏</a>
+                <a href="${pageContext.request.contextPath}/CancelAutoLoginServlet">退出</a>
+            </c:if>
 
-            <span>欢迎回来，admin</span>
-            <a href="myfavorite.jsp" class="collection">我的收藏</a>
-            <a href="${pageContext.request.contextPath}/CancelAutoLoginServlet">退出</a>
+
         </div>
     </div>
     <div class="header_wrap">

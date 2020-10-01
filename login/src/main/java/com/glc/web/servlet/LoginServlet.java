@@ -44,17 +44,18 @@ public class LoginServlet extends HttpServlet {
             System.out.println(user);
             //创建登录服务对象
             LoginService loginService = new LoginService();
-            //进行账号密码验证，返回结果
+            //进行账号状态与密码验证，返回结果
             resultInfo = loginService.login(user);
             //如果账号密码正确，将用户信息放入session中
             if(resultInfo.getFlag()==true){
                 session.setAttribute("user",resultInfo.getData());
-                //设置七天免登入
-                session.setMaxInactiveInterval(3600*24*7);
                 //如果点了记住密码，将cookie发送给浏览器，让其下一次携带着
                 if(rememberme!=null){
+                    //设置七天免登
+                    session.setMaxInactiveInterval(3600*24*7);
                     //将jsessionid发送给浏览器，下次浏览器会携带此id给服务器
                     Cookie cookie = new Cookie("JSESSIONID",session.getId());
+                    //设置cookie存活时间
                     cookie.setMaxAge(60*60*24*7);
                     cookie.setPath("/");
                     response.addCookie(cookie);

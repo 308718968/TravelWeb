@@ -54,32 +54,7 @@
         }
         return flag;
     }
-    function checkcode() {
-        var flag;
-        var codestring = $("#checkcode").val()
-        $.ajax({
-            url:"${pageContext.request.contextPath}/TestCodeServlet",
-            async:false,
-            data:"code="+codestring,
-            type:"post",
-            dataType:"json",
-            success:function (data) {
-                if(data.code==0){//验证码正确
-                    newcheckcode();
-                    flag=true
-                }
-                else {
-                    $("#codemsg").text(data.msg).css("color","red")
-                    newcheckcode();
-                    $("#checkcode").text("")
-                    flag=false;
-                }
-            },
-            error:function () {
-            }
-        });
-        return flag;
-    }
+
 </script>
 <body>
 <!--引入头部-->
@@ -165,12 +140,12 @@
                         <td class="td_right check">
                             <input type="text" id="check" name="check" class="check">
 
-                            <img src="${pageContext.request.contextPath}/CheckCodeServlet" height="32px" alt="" onclick="changeCheckCode(this)">
+                            <img id="code" src="${pageContext.request.contextPath}/CheckCodeServlet" height="32px" alt="" onclick="changeCheckCode(this)">
 
                             <script type="text/javascript">
                                 //图片点击事件
                                 function changeCheckCode(img) {
-                                    img.src="checkCode?"+new Date().getTime();
+                                    img.src="${pageContext.request.contextPath}/CheckCodeServlet?"+new Date().getTime();
                                 }
                             </script>
                         </td>
@@ -188,13 +163,13 @@
                             $("#registerForm").submit(function () {
                                 $.ajax({
                                     url:"${pageContext.request.contextPath}/RegisterServlet",
-                                    async:true,
+                                    async:false,//异步提交注册信息
                                     data:$("#registerForm").serialize(),
                                     type:"post",
                                     dataType:"json",
                                     success:function (data) {
                                         if(data.flag==false){//账号密码不正确，页面局部显示错误信息
-                                            $("#msg").text(data.ErrorMsg).css("color","red")
+                                            $("#msg").text(data.errorMsg).css("color","red")
                                         }else {//成功跳转
                                             $(location).attr('href', "${pageContext.request.contextPath}/register_ok.jsp")
                                         }
@@ -202,6 +177,7 @@
                                     error:function () {
                                     }
                                 });
+                                changeCheckCode(document.getElementById('code'))
                             })
                         </script>
                     </tr>

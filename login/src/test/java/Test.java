@@ -1,10 +1,12 @@
 import com.glc.bean.ResultInfo;
 import com.glc.bean.User;
+import com.glc.service.ActiveEmailService;
 import com.glc.service.CheckCodeService;
 import com.glc.service.LoginService;
 import com.glc.service.RegisterService;
 
 import javax.imageio.ImageIO;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.UUID;
 
@@ -41,5 +43,10 @@ public class Test {
     public void test2(){
         String uuid = UUID.randomUUID().toString();
         System.out.println(uuid);
+    }
+    @org.junit.Test
+    public void TestEmail(){
+        ActiveEmailService activeEmailService = new ActiveEmailService();
+        activeEmailService.active("7086b5a1bbad41f9b92e799433be89c1");
     }
 }

@@ -16,7 +16,7 @@ public class IsLoginFilter implements Filter {
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
         HttpServletRequest request = (HttpServletRequest) req;
         String uri = request.getRequestURI();
-        if(uri.contains("RegisterServlet")||uri.contains("/register.jsp")||uri.contains("/login.jsp")||uri.contains("/images/")||uri.contains("/img/")||uri.contains("/LoginServlet")||uri.contains("/css/")||uri.contains("/error/")||uri.contains("/fonts/")||uri.contains("/js/")||uri.contains("/CheckCodeServlet")||uri.contains("CancelAutoLoginServlet")){
+        if(uri.contains("/ActiveEmailServlet")||uri.contains("/register_ok.jsp")||uri.contains("/RegisterServlet")||uri.contains("/register.jsp")||uri.contains("/login.jsp")||uri.contains("/images/")||uri.contains("/img/")||uri.contains("/LoginServlet")||uri.contains("/css/")||uri.contains("/error/")||uri.contains("/fonts/")||uri.contains("/js/")||uri.contains("/CheckCodeServlet")||uri.contains("CancelAutoLoginServlet")){
             chain.doFilter(req, resp);
         }else{
             Object user = request.getSession().getAttribute("user");

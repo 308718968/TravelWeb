@@ -10,4 +10,8 @@
     <insert id="createUser" parameterType="com.glc.bean.User">
         insert into tab_user(username,password,name,birthday,sex,telephone,email,status,code) value(#{username},#{password},#{name},#{birthday},#{sex},#{telephone},#{email},1,#{code})
     </insert>
+    <update id="activeAccount" parameterType="string">
+        update tab_user set status=0 where code = #{code}
+    </update>
+
 </mapper>

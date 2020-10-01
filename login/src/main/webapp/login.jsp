@@ -113,7 +113,7 @@
                     <button id="btn" type="button">登录</button>
                     <div class="auto_login">
                         <input id="rememberme" type="checkbox" name="rememberme" class="checkbox">
-                        <span>自动登录</span>
+                        <span>七天免登</span>
                     </div>
                 </div>
             </form>
