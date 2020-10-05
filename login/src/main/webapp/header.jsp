@@ -8,6 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!-- 头部 start -->
+<script type="text/javascript">
+    function search() {
+        if($("#search").val()!=null&&$("#search").val().length>0){
+            console.log($("#search").val())
+            window.location="route_list.jsp?search="+$("#search").val()
+        }
+    }
+</script>
 <header id="header">
     <div class="top_banner">
         <img src="images/top_banner.jpg" alt="">
@@ -38,8 +46,8 @@
                 <a href="/"><img src="images/logo.jpg" alt=""></a>
             </div>
             <div class="search">
-                <input name="" type="text" placeholder="请输入路线名称" class="search_input" autocomplete="off">
-                <a href="javascript:;" class="search-button">搜索</a>
+                <input id="search" name="search" type="text" placeholder="请输入路线名称" class="search_input" autocomplete="off">
+                <a href="javascript:search()" class="search-button">搜索</a>
             </div>
             <div class="hottel">
                 <div class="hot_pic">
@@ -82,15 +90,5 @@
 <!-- 首页导航 -->
 <div class="navitem">
     <ul class="nav" id="nav">
-<%--        <li class="nav-active"><a href="index.jsp">首页</a></li>--%>
-<%--        <li><a href="route_list.jsp">门票</a></li>--%>
-<%--        <li><a href="route_list.jsp">酒店</a></li>--%>
-<%--        <li><a href="route_list.jsp">香港车票</a></li>--%>
-<%--        <li><a href="route_list.jsp">出境游</a></li>--%>
-<%--        <li><a href="route_list.jsp">国内游</a></li>--%>
-<%--        <li><a href="route_list.jsp">港澳游</a></li>--%>
-<%--        <li><a href="route_list.jsp">抱团定制</a></li>--%>
-<%--        <li><a href="route_list.jsp">全球自由行</a></li>--%>
-<%--        <li><a href="favoriterank.jsp">收藏排行榜</a></li>--%>
     </ul>
 </div>

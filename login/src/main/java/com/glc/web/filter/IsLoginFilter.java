@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
-@WebFilter("/*")
+@WebFilter("")
 public class IsLoginFilter implements Filter {
     public void destroy() {
     }
