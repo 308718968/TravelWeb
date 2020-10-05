@@ -54,18 +54,43 @@
     </div>
 </header>
 <!-- 头部 end -->
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        $.ajax({
+            url:"CategoryServlet",//url
+            async:true,//true 同步请求
+            type:"get",//指定请求方式
+            dataType:"json",//预期返回的数据类型
+            success:function (data) {//请求成功后的回调函数。
+                if(data.flag==true){
+                    var list = data.data;
+                    lis='<li class="nav-active"><a href="index.jsp">首页</a></li>';
+                    for(var i=0;i<list.length;i++){
+                        var li = '<li><a href="route_list.jsp">'+list[i].cname+'</a></li>'
+                        lis+=li;
+                    }
+                    lis+='<li><a href="favoriterank.jsp">收藏排行榜</a></li>'
+                    $("#nav").html(lis);
+                }
+            },
+            error:function () {//请求失败时调用此函数。
+            }
+        });
+    })
+</script>
 <!-- 首页导航 -->
 <div class="navitem">
-    <ul class="nav">
-        <li class="nav-active"><a href="index.jsp">首页</a></li>
-        <li><a href="route_list.jsp">门票</a></li>
-        <li><a href="route_list.jsp">酒店</a></li>
-        <li><a href="route_list.jsp">香港车票</a></li>
-        <li><a href="route_list.jsp">出境游</a></li>
-        <li><a href="route_list.jsp">国内游</a></li>
-        <li><a href="route_list.jsp">港澳游</a></li>
-        <li><a href="route_list.jsp">抱团定制</a></li>
-        <li><a href="route_list.jsp">全球自由行</a></li>
-        <li><a href="favoriterank.jsp">收藏排行榜</a></li>
+    <ul class="nav" id="nav">
+<%--        <li class="nav-active"><a href="index.jsp">首页</a></li>--%>
+<%--        <li><a href="route_list.jsp">门票</a></li>--%>
+<%--        <li><a href="route_list.jsp">酒店</a></li>--%>
+<%--        <li><a href="route_list.jsp">香港车票</a></li>--%>
+<%--        <li><a href="route_list.jsp">出境游</a></li>--%>
+<%--        <li><a href="route_list.jsp">国内游</a></li>--%>
+<%--        <li><a href="route_list.jsp">港澳游</a></li>--%>
+<%--        <li><a href="route_list.jsp">抱团定制</a></li>--%>
+<%--        <li><a href="route_list.jsp">全球自由行</a></li>--%>
+<%--        <li><a href="favoriterank.jsp">收藏排行榜</a></li>--%>
     </ul>
 </div>

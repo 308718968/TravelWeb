@@ -4,10 +4,9 @@ import com.glc.service.ActiveEmailService;
 import com.glc.service.CheckCodeService;
 import com.glc.service.LoginService;
 import com.glc.service.RegisterService;
+import com.sun.org.apache.bcel.internal.generic.LDIV;
 
-import javax.imageio.ImageIO;
-import java.awt.*;
-import java.awt.image.BufferedImage;
+import java.io.IOException;
 import java.util.UUID;
 
 public class Test {
@@ -49,4 +48,8 @@ public class Test {
         ActiveEmailService activeEmailService = new ActiveEmailService();
         activeEmailService.active("7086b5a1bbad41f9b92e799433be89c1");
     }
+
+
+
+
 }
