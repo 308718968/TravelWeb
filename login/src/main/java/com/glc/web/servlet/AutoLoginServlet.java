@@ -22,10 +22,13 @@ public class AutoLoginServlet extends HttpServlet {
             if("JSESSIONID".equals(cookie.getName())){
                 //如果该sessionid下的域中存放着user对象就进行登录操作
                 User user = (User) session.getAttribute("user");
-                LoginService loginService = new LoginService();
-                ResultInfo resultInfo = loginService.login(user);
-                if(resultInfo.getFlag()==true){
-                    response.getWriter().print(new ObjectMapper().writeValueAsString(resultInfo));
+                //如果不为空就自动登录
+                if(user!=null){
+                    LoginService loginService = new LoginService();
+                    ResultInfo resultInfo = loginService.login(user);
+                    if(resultInfo.getFlag()==true){
+                        response.getWriter().print(new ObjectMapper().writeValueAsString(resultInfo));
+                    }
                 }
 
             }

@@ -16,7 +16,7 @@ function showList(data) {
             '                                <span>' + route.price + '</span>\n' +
             '                                <span>起</span>\n' +
             '                            </p>\n' +
-            '                            <p><a href="route_detail.html">查看详情</a></p>\n' +
+            '                            <p><a href="route_detail.jsp">查看详情</a></p>\n' +
             '                        </div>\n' +
             '                    </li>'
         lis+=li;
@@ -25,8 +25,9 @@ function showList(data) {
 
 
 }
-function showPageInfo(search,data) {
-    search= "'"+search+"'";
+function showPageInfo(url,dataname,info,data) {
+    url="'"+url+"'"
+    dataname= "'"+dataname+"'";
     var totalCount = data.totalCount
     var totalPage = data.totalPage
     var currentPage = data.currentPage
@@ -60,19 +61,19 @@ function showPageInfo(search,data) {
     $("#page_num_info").html('<i></i> 共\n' +
         '            <span>'+totalPage+'</span>页<span>'+totalCount+'</span>条')
     lis='                    <ul>\n' +
-        '                        <li><a href="javascript:load('+search+',1,'+pageSize+')">首页</a></li>\n' +
-        '                        <li class="threeword"><a href="javascript:load('+search+','+pre+','+pageSize+')">上一页</a></li>';
+        '                        <li><a href="javascript:load('+url+','+dataname+',1,'+pageSize+')">首页</a></li>\n' +
+        '                        <li class="threeword"><a href="javascript:load('+url+','+dataname+','+info+','+pre+','+pageSize+')">上一页</a></li>';
 
     for(var i =start;i<=end;i++){
         if(currentPage==i){
-            lis+='<li class="curPage"><a href="javascript:load('+search+','+i+','+pageSize+')">'+i+'</a></li>'
+            lis+='<li class="curPage"><a href="javascript:load('+url+','+dataname+','+info+','+i+','+pageSize+')">'+i+'</a></li>'
         }else{
-            lis+='<li><a href="javascript:load('+search+','+i+','+pageSize+')">'+i+'</a></li>'
+            lis+='<li><a href="javascript:load('+url+','+dataname+','+info+','+i+','+pageSize+')">'+i+'</a></li>'
         }
 
     }
-    lis+='                        <li class="threeword"><a href="javascript:load('+search+','+next+','+pageSize+')">下一页</a></li>\n' +
-        '                     <li class="threeword"><a href="javascript:load('+search+','+totalPage+','+pageSize+')">末页</a></li>\n' +
+    lis+='                        <li class="threeword"><a href="javascript:load('+url+','+dataname+','+info+','+next+','+pageSize+')">下一页</a></li>\n' +
+        '                     <li class="threeword"><a href="javascript:load('+url+','+dataname+','+info+','+totalPage+','+pageSize+')">末页</a></li>\n' +
         '                    </ul>'
     $("#pageNum").html(lis)
     //滚动坐标

@@ -12,6 +12,9 @@
     function search() {
         if($("#search").val()!=null&&$("#search").val().length>0){
             console.log($("#search").val())
+            if($("#search").val().length==0){
+                return;
+            }
             window.location="route_list.jsp?search="+$("#search").val()
         }
     }
@@ -75,7 +78,7 @@
                     var list = data.data;
                     lis='<li class="nav-active"><a href="index.jsp">首页</a></li>';
                     for(var i=0;i<list.length;i++){
-                        var li = '<li><a href="route_list.jsp">'+list[i].cname+'</a></li>'
+                        var li = '<li><a href="route_list.jsp?cid='+list[i].cid+'">'+list[i].cname+'</a></li>'
                         lis+=li;
                     }
                     lis+='<li><a href="favoriterank.jsp">收藏排行榜</a></li>'

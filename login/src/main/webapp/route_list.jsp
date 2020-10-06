@@ -16,34 +16,46 @@
     <link rel="stylesheet" href="css/search.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/myFunction.js"></script>
+    <script src="js/getParameter.js"></script>
 </head>
 <script type="text/javascript">
     $(function () {
-        var searchencode = window.location.search.split('=');
-        var search = decodeURI(searchencode[1]);
-        var currentPage =1
-        var pageSize=10
-        load(search,currentPage,pageSize);
+        var search = getParameter('search')
+        var cid = getParameter('cid');
+        if(search!=null){
+            var currentPage =1
+            var pageSize=10
+            load('RouteServlet','search',search,currentPage,pageSize);
+            return
+        }else if(cid!=null){
+            var currentPage =1
+            var pageSize=10
+            load('RouteServlet2','cid',cid,currentPage,pageSize);
+            return
+        }
+        // var searchencode = window.location.search.split('=');
+        // var search = decodeURI(searchencode[1]);
 
     })
-    function load(search,currentPage,pageSize) {
+    function load(url,dataname,info,currentPage,pageSize) {
         $.ajax({
-            url:"RouteServlet",//url
+            url:url,//url
             async:true,//true 同步请求
-            data:'search='+search+'&currentPage='+currentPage+'&pageSize='+pageSize+'',
+            data:''+dataname+'='+info+'&currentPage='+currentPage+'&pageSize='+pageSize+'',
             type:"get",//指定请求方式
             dataType:"json",//预期返回的数据类型
             success:function (data) {//请求成功后的回调函数。
                 if(data.flag==true){
                     routeList = data.data
                     showList(routeList)
-                    showPageInfo(search,routeList);
+                    showPageInfo(url,dataname,info,routeList);
                 }
             },
             error:function () {//请求失败时调用此函数。
             }
         });
     }
+
 
 
 
