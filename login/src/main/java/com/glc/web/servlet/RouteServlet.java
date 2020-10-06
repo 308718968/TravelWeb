@@ -20,7 +20,8 @@ public class RouteServlet extends HttpServlet {
         String currentPage = request.getParameter("currentPage");
         String pageSize = request.getParameter("pageSize");
         RouteService routeService = new RouteService();
-
+        System.out.println(currentPage);
+        System.out.println(pageSize);
         PageBean routeList = routeService.search("%"+search+"%",Integer.parseInt(currentPage),Integer.parseInt(pageSize));
         ResultInfo resultInfo = new ResultInfo();
         if(routeList!=null){
