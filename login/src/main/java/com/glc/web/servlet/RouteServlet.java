@@ -11,11 +11,34 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.net.URLDecoder;
 
-@WebServlet("/RouteServlet")
-public class RouteServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+@WebServlet("/RouteServlet/*")
+public class RouteServlet extends BaseServlet {
+    public void cid(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String cidstr = request.getParameter("cid");
+        String currentPagestr = request.getParameter("currentPage");
+        String pageSizestr = request.getParameter("pageSize");
+        System.out.println(cidstr+"===="+currentPagestr+"===="+pageSizestr);
+        int cid=0;
+        int currentPage=0;
+        int pageSize=0;
+        //避免传过来的参数不是正常的数字字符串
+        try {
+            cid = Integer.parseInt(cidstr);
+            currentPage = Integer.parseInt(currentPagestr);
+            pageSize = Integer.parseInt(pageSizestr);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        RouteService routeService = new RouteService();
+        PageBean pageBean = routeService.searchById(cid, currentPage, pageSize);
+        String json = super.toJson(pageBean);
+        response.getWriter().print(json);
+    }
+    public void search(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String  search = request.getParameter("search");
         System.out.println(search);
@@ -27,25 +50,14 @@ public class RouteServlet extends HttpServlet {
         int currentPage=1;
         int pageSize =10;
         try {
-              currentPage= Integer.parseInt(currentPagestr) ;
-              pageSize = Integer.parseInt(pageSizestr)     ;
+            currentPage= Integer.parseInt(currentPagestr) ;
+            pageSize = Integer.parseInt(pageSizestr)     ;
         }    catch (Exception e){
             e.printStackTrace();
         }
         RouteService routeService = new RouteService();
         PageBean routeList = routeService.search("%"+search+"%",currentPage,pageSize);
-        ResultInfo resultInfo = new ResultInfo();
-        if(routeList!=null){
-            resultInfo.setData(routeList);
-            resultInfo.setFlag(true);
-        }else {
-            resultInfo.setFlag(false);
-        }
-        System.out.println(resultInfo);
-        response.getWriter().print(new ObjectMapper().writeValueAsString(resultInfo));
-    }
-
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request, response);
+        String json = super.toJson(routeList);
+        response.getWriter().print(json);
     }
 }

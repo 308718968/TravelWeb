@@ -2,6 +2,7 @@ package com.glc.service;
 
 import com.glc.bean.PageBean;
 import com.glc.bean.Route;
+import com.glc.bean.PageBeanHelper;
 import com.glc.dao.RouteDao;
 import com.glc.util.MySessionUtils;
 
@@ -13,15 +14,21 @@ public class RouteService {
         int start = (currentPage-1)*pageSize;
         //查询路线
         List<Route> routeList= routeDao.findRouteByName(name,start,pageSize);
+        System.out.println(routeList);
         //查询总条目数
         int totalCount= routeDao.findCountByName(name);
         MySessionUtils.commitAndClose();
-        PageBean pageBean = new PageBean();
-        pageBean.setList(routeList);
-        pageBean.setTotalCount(totalCount);
-        pageBean.setPageSize(pageSize);
-        pageBean.setTotalPage(totalCount%pageSize==0?totalCount/pageSize:totalCount/pageSize+1);
-        pageBean.setCurrentPage(currentPage);
+        PageBean pageBean = PageBeanHelper.create(currentPage, pageSize).count(totalCount).list(routeList);
+        System.out.println(pageBean);
+        return pageBean;
+    }
+    public PageBean searchById(int cid,int currentPage,int pageSize) {
+        RouteDao routeDao = MySessionUtils.getMapper(RouteDao.class);
+        int totalCount  = routeDao.findCountById(cid);
+        int start = (currentPage-1)*pageSize;
+        List<Route> routeList = routeDao.findRouteById(cid,start,pageSize);
+        MySessionUtils.commitAndClose();
+        PageBean pageBean = PageBeanHelper.create(currentPage,pageSize).count(totalCount).list(routeList);
         return pageBean;
     }
 }

@@ -1,5 +1,6 @@
 package com.glc.bean;
 
+import java.awt.*;
 import java.util.List;
 
 public class PageBean {
@@ -76,4 +77,15 @@ public class PageBean {
 
     //当前页的数据
     private List<Route> list;
+
+    public PageBean count(int totalCount) {
+        this.setTotalCount(totalCount);
+        this.setTotalPage(totalCount%pageSize==0?totalCount/pageSize:totalCount/pageSize+1);
+        return this;
+    }
+
+    public PageBean list(List<Route> routeList) {
+        this.setList(routeList);
+        return this;
+    }
 }

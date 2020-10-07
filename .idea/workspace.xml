@@ -12,11 +12,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6d1ccf6e-b503-4886-9c8b-b6913aabfbbe" name="Default Changelist" comment="引入资源文件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/src/main/java/com/glc/dao/RouteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/java/com/glc/dao/RouteDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/java/com/glc/bean/PageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/java/com/glc/bean/PageBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login/src/main/java/com/glc/service/RouteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/java/com/glc/service/RouteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/src/main/java/com/glc/web/servlet/AutoLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/java/com/glc/web/servlet/AutoLoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/java/com/glc/service/RouteService2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/login/src/main/java/com/glc/web/servlet/RouteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/java/com/glc/web/servlet/RouteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/webapp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/java/com/glc/web/servlet/RouteServlet2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/login/src/main/webapp/js/myFunction.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/webapp/js/myFunction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login/src/main/webapp/route_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/webapp/route_list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login/src/test/java/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/test/java/CategoryTest.java" afterDir="false" />
@@ -88,12 +88,10 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\TravelWeb\login\src\main\resources" />
-      <recent name="F:\TravelWeb\login\src\main\java\com\glc\util" />
-      <recent name="F:\TravelWeb\login\src\main\java\com\glc\bean" />
-      <recent name="F:\TravelWeb\login\src\main\resources\com\glc\dao" />
-      <recent name="F:\TravelWeb\login\src\main\java\com\glc\web" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.glc.dao" />
+      <recent name="com.glc.service" />
+      <recent name="com.glc.bean" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.glc.dao" />
@@ -101,10 +99,12 @@
       <recent name="" />
       <recent name="com.glc.util" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.glc.service" />
-      <recent name="com.glc.dao" />
-      <recent name="com.glc.bean" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\TravelWeb\login\src\main\resources" />
+      <recent name="F:\TravelWeb\login\src\main\java\com\glc\util" />
+      <recent name="F:\TravelWeb\login\src\main\java\com\glc\bean" />
+      <recent name="F:\TravelWeb\login\src\main\resources\com\glc\dao" />
+      <recent name="F:\TravelWeb\login\src\main\java\com\glc\web" />
     </key>
   </component>
   <component name="RunManager" selected="Maven.tomcat">
@@ -265,9 +265,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CategoryTest.test2" />
+        <item itemvalue="JUnit.RouteTest.test" />
         <item itemvalue="JUnit.CategoryTest.test" />
         <item itemvalue="JUnit.CategoryTest" />
-        <item itemvalue="JUnit.RouteTest.test" />
         <item itemvalue="JUnit.RouteTest" />
       </list>
     </recent_temporary>
@@ -290,7 +290,8 @@
       <workItem from="1601728864056" duration="847000" />
       <workItem from="1601774261151" duration="39413000" />
       <workItem from="1601951011677" duration="20232000" />
-      <workItem from="1601989346304" duration="1611000" />
+      <workItem from="1601989346304" duration="6572000" />
+      <workItem from="1602033617480" duration="10295000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1601434813160</created>
@@ -334,14 +335,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="596" y="94" key="#Unnamed/0.0.1920.1040@0.0.1920.1040" timestamp="1601912152614" />
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601985569589">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602052778259">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601985569589" />
-    <state x="764" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1601899561392">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602052778259" />
+    <state x="764" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1602060219690">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="764" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1601899561392" />
+    <state x="764" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602060219690" />
     <state x="858" y="426" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1601449369178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -354,38 +355,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1601466120864" />
-    <state width="1859" height="626" key="GridCell.Tab.0.bottom" timestamp="1601991852242">
+    <state width="1859" height="45" key="GridCell.Tab.0.bottom" timestamp="1602062644629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1859" height="626" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601991852242" />
-    <state width="1859" height="626" key="GridCell.Tab.0.center" timestamp="1601991852242">
+    <state width="1859" height="45" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602062644629" />
+    <state width="1859" height="45" key="GridCell.Tab.0.center" timestamp="1602062644629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1859" height="626" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601991852242" />
-    <state width="1859" height="626" key="GridCell.Tab.0.left" timestamp="1601991852242">
+    <state width="1859" height="45" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602062644629" />
+    <state width="1859" height="45" key="GridCell.Tab.0.left" timestamp="1602062644629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1859" height="626" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601991852242" />
-    <state width="1859" height="626" key="GridCell.Tab.0.right" timestamp="1601991852242">
+    <state width="1859" height="45" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602062644629" />
+    <state width="1859" height="45" key="GridCell.Tab.0.right" timestamp="1602062644629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1859" height="626" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601991852242" />
-    <state width="1859" height="344" key="GridCell.Tab.1.bottom" timestamp="1601989266686">
+    <state width="1859" height="45" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602062644629" />
+    <state width="1859" height="344" key="GridCell.Tab.1.bottom" timestamp="1602061548641">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1859" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601989266686" />
-    <state width="1859" height="344" key="GridCell.Tab.1.center" timestamp="1601989266686">
+    <state width="1859" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602061548641" />
+    <state width="1859" height="344" key="GridCell.Tab.1.center" timestamp="1602061548640">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1859" height="344" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601989266686" />
-    <state width="1859" height="344" key="GridCell.Tab.1.left" timestamp="1601989266686">
+    <state width="1859" height="344" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602061548640" />
+    <state width="1859" height="344" key="GridCell.Tab.1.left" timestamp="1602061548640">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1859" height="344" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601989266686" />
-    <state width="1859" height="344" key="GridCell.Tab.1.right" timestamp="1601989266686">
+    <state width="1859" height="344" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602061548640" />
+    <state width="1859" height="344" key="GridCell.Tab.1.right" timestamp="1602061548641">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1859" height="344" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601989266686" />
+    <state width="1859" height="344" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602061548641" />
     <state width="1280" height="433" key="GridCell.Tab.2.bottom" timestamp="1601944365527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -454,9 +455,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="242" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601434605756" />
-    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1601464418776">
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1602053235878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601464418776" />
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602053235878" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/login/src/main/java/com/glc/service/RouteService.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/login/src/main/java/com/glc/bean/PageBean.java</url>
+          <line>86</line>
+          <properties class="com.glc.bean.PageBean" method="list">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -25,30 +25,30 @@
         if(search!=null){
             var currentPage =1
             var pageSize=10
-            load('RouteServlet','search',search,currentPage,pageSize);
+            load('search',search,currentPage,pageSize);
             return
         }else if(cid!=null){
             var currentPage =1
             var pageSize=10
-            load('RouteServlet2','cid',cid,currentPage,pageSize);
+            load('cid',cid,currentPage,pageSize);
             return
         }
         // var searchencode = window.location.search.split('=');
         // var search = decodeURI(searchencode[1]);
 
     })
-    function load(url,dataname,info,currentPage,pageSize) {
+    function load(dataname,info,currentPage,pageSize) {
         $.ajax({
-            url:url,//url
+            url:'/RouteServlet/'+dataname,//url
             async:true,//true 同步请求
             data:''+dataname+'='+info+'&currentPage='+currentPage+'&pageSize='+pageSize+'',
             type:"get",//指定请求方式
             dataType:"json",//预期返回的数据类型
             success:function (data) {//请求成功后的回调函数。
                 if(data.flag==true){
-                    routeList = data.data
+                    routeList = data.data;
                     showList(routeList)
-                    showPageInfo(url,dataname,info,routeList);
+                    showPageInfo(dataname,info,routeList);
                 }
             },
             error:function () {//请求失败时调用此函数。
